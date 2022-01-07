@@ -1,0 +1,275 @@
+/* I defeintely could use some better images for my portfolio. I should have taken a picture
+at the interview I did for Harry met Sally 
+
+That was fun! Excited for button customization. I wonder if I could work on the Alliances website. There is that section with
+all that text, maybe i could put it into a Q+A panel where you press a topic, and then it opens up all the text
+*/
+html {
+    height: 100%;
+}
+
+.container {
+    width:1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+header {
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+
+body {
+    font-family:'Playfair Display', serif;
+    background-color: #F4D03F;
+    font-size: 1.125rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    margin-top: 20px;
+    
+    
+}
+main {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-top: 30px;
+}
+a {
+    color:white;
+    text-decoration: none;
+
+}
+.cards {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.card1 {
+    background-image: url(img/IMG_1552.JPG);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 300px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,228);
+
+}
+.card2 {
+    background-image: url(img/IMG_2003.JPG);
+    background-size: cover;
+    min-height: 300px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,228);
+}
+.card3 {
+    background-image: url(img/IMG_2026.JPG);
+    background-size: cover;
+    min-height: 300;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,228);
+
+}
+
+.card1, .card2, .card3 {
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.herobox1 {
+    width: 50%;
+    flex:2;
+
+
+}
+.herobox2 {
+    width: 50%;
+    flex:1;
+}
+
+div img {
+    height: 100%;
+    width: 100%;
+}
+
+.headerbox1 {
+    width: 50%;
+    min-height: 50px;
+    flex:1;
+}
+
+.headerbox2 {
+    width: 50%;
+    min-height: 50px;
+    flex:2;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+nav a {
+    font-size: 18pt;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+
+h1 {
+    font-size: 32pt;
+    margin-bottom: .25rem;
+}
+
+p {
+    line-height: 1.75rem;
+}
+
+.cards h2{
+    color: white;
+    text-align: center;
+}
+
+.cards p{
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+}
+.cards i {
+    font-size: 100px;
+    color: white;
+    padding-top: 20px;
+}
+
+.myButton {
+    background-color: none;
+    color: black;
+    font-family: 'Playfair';
+    padding: 11px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,228);
+
+    /* could make this a clickable image by making
+    this with a background image */
+    
+    
+}
+
+.myButton:hover {
+    background-color: cadetblue;
+    transition-duration: .25s;
+}
+
+a.myButton {
+    display:inline-block;
+    margin-top: 20px;
+}
+
+.herobox2 img{
+    border-radius: 5px;
+}
+
+.card1 img{
+    border-radius: 5px;
+}
+
+.card2 img{
+    border-radius: 5px;
+}
+
+.card3 img {
+    border-radius: 5px;
+}
+
+main h1{
+    text-shadow: 0px 1px 1px rgba(255,255,255,228);
+    color: black
+}
+
+main a.myButton {
+    background-color: white;
+    font-size: 1.25rem;
+}
+
+
+.navbutton {
+    margin-left: 10px;
+    background-color: none;
+    outline: 2px solid black;
+    display:inline-block;
+    margin-top: 20px;
+    font-family: 'Playfair';
+    padding: 11px 25px;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+.navbutton:hover {
+    background-color: cadetblue;
+    transition-duration: .25s;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding: 50px;
+}
+.tBox {
+    width: 47%;
+    border: 1px solid black;
+    padding:50px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.tBox :last-child{
+    font-size: 1rem;
+    padding-right: 80px;
+}
+
+.tBox p:first-of-type {
+    font-size: 2rem;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.navbutton:hover .dropdown{
+    display: block; 
+}
+
+/* for a navbutton inside of dropdown */
+.dropdown .navbutton {
+    width: 120px;
+    margin-top: none;
+    background-color: black;
+    color: white;
+}
