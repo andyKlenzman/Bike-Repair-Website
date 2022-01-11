@@ -7,12 +7,11 @@ all that text, maybe i could put it into a Q+A panel where you press a topic, an
 html {
   min-height: 100%;
   background-color: #faaca8;
-  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
-
-}
+  background-image: linear-gradient(#FC5E55, #FA4083);}
 
 .container {
   width: 1024px;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,15 +21,19 @@ header {
   padding-bottom: 20px;
   padding-top: 20px;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 body {
-  font-family: "Playfair Display", serif;
-  background-image:none;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(img/image-lion-background.png);
+  background-size:cover;
+  background-position:top left;
+  background-repeat: None;
   font-size: 1.125rem;
-  margin-top: 20px;
-  min-height: 100%;
+  color: white;
+  /* margin-top: 20px;
+  min-height: 100%; */
 }
 main {
   min-height: 300px;
@@ -41,8 +44,8 @@ main {
   padding-top: 30px;
 }
 
-.main2{
-    min-height: 300px;
+.main2 {
+  min-height: 300px;
 }
 a {
   color: white;
@@ -55,10 +58,10 @@ a {
   text-decoration: none;
 }
 .card1 {
-  background-image: url(img/image-background-card1.jpg);
+  background-image: url(img/image-background-card1a.jpeg);
   background-size: cover;
   background-position: bottom;
-  min-height: 300px;
+  min-height: 250px;
   width: 30%;
   border-radius: 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 228);
@@ -79,21 +82,27 @@ a {
   border-radius: 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 228);
 }
-
+/* FOUND IT, the padding in these three boxes was way too big! Great
+fucking job finding it. */
 .card1,
 .card2,
 .card3 {
-  padding: 80px;
+  padding: 30px 30px 20px 30px;
   box-sizing: border-box;
 }
 
 .herobox1 {
-  width: 50%;
+  width: 40%;
   flex: 2;
-  padding-right: 20px;
+  padding-right: 100px;
+
+}
+.herobox1 h1{
+  font-size: 3rem;
+  
 }
 .herobox2 {
-  width: 50%;
+  width: 60%;
   flex: 1;
 }
 
@@ -122,23 +131,42 @@ div img {
   height: 100px;
   width: auto;
 }
-
+.navbutton a{
+  font-size: 1.5rem;
+  padding: 5px;
+}
 nav a {
-  font-size: 18pt;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-size: 1rem;
+  
   text-decoration: none;
   align-items: center;
-  color: black;
+  color: white;
 }
 
 h1 {
-  font-size: 32pt;
-  margin-bottom: 0.25rem;
+  font-size: 3.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 20px;
 }
 
 p {
   line-height: 1.75rem;
+  margin-bottom: .5rem;
+}
+
+/* idk what this is but it just made my code look a lot better */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .cards h2 {
@@ -162,7 +190,7 @@ p {
   color: black;
   font-family: "Playfair";
   padding: 11px 25px;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 228);
 
   /* could make this a clickable image by making
@@ -170,8 +198,8 @@ p {
 }
 
 .myButton:hover {
-  background-color: rgb(205, 222, 223);
-  transition-duration: 0.15s;
+  background-color: rgb(109, 255, 109);
+  transition-duration: 0.22s;
 }
 
 a.myButton {
@@ -195,26 +223,46 @@ a.myButton {
   border-radius: 5px;
 }
 
+.card1:hover {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 228);
+  transition-duration: 0.5s;
+}
+.card2:hover {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 228);
+  transition-duration: 0.5s;
+}
+.card3:hover {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 228);
+  transition-duration: 0.5s;
+}
+
 main h1 {
-  text-shadow: 0px 1px 1px rgba(255, 255, 255, 228);
-  color: black;
+  
+  text-shadow: 0px 2px 2px rgb(0 0 0 / 23%);;
+  color: white;
+}
+main p {
+  
+  color: white;
 }
 
 main a.myButton {
   background-color: white;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  color: #FA4083;
 }
 
 .navbutton {
-  margin-right: 3px;
+  
   background-color: none;
-  outline: 2px solid black;
+  outline: 2px solid white;
   display: inline-block;
   margin-top: 20px;
   font-family: "Playfair";
   padding: 11px 21px;
-  border-radius: 5px;
+  border-radius: 2px;
   position: relative;
+  margin-left: 5px; 
 }
 
 .navbutton:hover {
@@ -227,30 +275,34 @@ main a.myButton {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 100px;
-  padding: 50px;
+  
 }
 .tBox {
   width: 47%;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 50px;
+  border-radius: 3px;
   box-sizing: border-box;
-  margin-top: 30px;
-  text-align: center;
+  margin-top: 50px;
+  
 }
 
 .tBox :last-child {
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-right: 120px;
 }
 
 .tBox p:first-of-type {
   font-size: 1.5rem;
-}
+  line-height: 2rem;
+} 
 
 .dropdown {
   display: none;
   position: absolute;
   padding-top: 17px;
+  text-align: center;
+  
 }
 
 .navbutton:hover .dropdown {
@@ -262,13 +314,63 @@ main a.myButton {
   width: 30px;
   text-align: center;
   margin-top: 5px;
-  background-color: none;
-  color: black;
+  background-color: white;
+  
+  color: #FA4083;
+  text-align: center;
   width: 100%;
   font-size: 1.5rem;
 }
 
-.main2 h1{
-    
-    padding-bottom: 20px;
+.main2 h1 {
+  padding-bottom: 20px;
 }
+
+.main2 p{
+  padding-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+#name {
+  size: 3rem;
+}
+.inputwrapper{
+  margin-bottom: 20px;
+}
+input[type=text], input[type=email], input[type=fname], 
+input[type=lname], textarea{
+  padding:12px 20px;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+select{
+  padding:12px 20px;
+  color:black;
+  font-size: 1rem;
+}
+
+
+.newline{
+  display: block;
+}
+
+.main2 div p{
+  padding-bottom: 0px;
+  font-size: 1.25rem;
+  margin-bottom: 0px;
+}
+.margin-right-a {
+  margin-right: 20px;
+}
+form{
+  margin-bottom: 60px;
+}
+form .myButton{
+  color: #FA4083;
+  font-size: 1.25rem;
+  margin-top: 20px;
+  box-shadow: none;
+}
+

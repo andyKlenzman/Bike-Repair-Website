@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <!-- When duplicating page, change title and add description...steal from old site-->
-    <title>Mobile Repair Shop = contact us details address phone number email</title>
+    <title>Roar Cycle = Contact Us Details Address Phone Number</title>
     <!-- meta is the part that shows up below the page ...refer to lesson 71 for great business advice -->
     <meta name="description" content="content details for repair shope, with specific phone number, emauls. ect">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,28 +30,27 @@
       <header>
         <div class="headerbox1">
             <a href="index.html">
-                <img class="logo" src="img/image-lion-background.png" alt="" />
+                <img class="logo" src="img/logo-roar-bikes.svg" alt="" />
             </a>
         </div>
 
         <nav>
           <div class="navbutton">
-            <a href="#">Home</a>
+            <a href="#">Book Online</a>
             <div class="dropdown">
-              <div class="navbutton"><a href="#"></a>Item 1</div>
-              <div class="navbutton"><a href="#"></a>Item 2</div>
-              <div class="navbutton"><a href="#"></a>Item 3</div>
+              <div class="navbutton"><a href="#"></a>Delivery</div>
+              <div class="navbutton"><a href="#"></a>Callback</div>
+              <div class="navbutton"><a href="#"></a>Request Parts</div>
             </div>
           </div>
 
           <div class="navbutton">
-            <a href="#">Work</a>
-            <div class="dropdown">
-            </div>
+            <a href="#">About</a>
+            
           </div>
 
           <div class="navbutton">
-            <a href="#">Contact</a>
+            <a href="contact-us.html">Contact</a>
             <div class="dropdown">
             </div>
           </div>
@@ -65,6 +64,61 @@
           <p>
               Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you in a matter of hours to help you.
           </p>
+<!-- Can't test the PHP code rn, but we will do it later; -->
+          <form action="mail.php" method="post"> 
+
+            <div class="inputwrapper">
+              <label for="fname" class="newline">First Name</label>
+              <input type="text" name="fname" id="fname" placeholder="Enter Name">
+            </div>
+
+            <div class="inputwrapper">
+              <label for="lname" class="newline">Last Name</label>
+              <input type="text" name="lname" id="lname" placeholder="Enter Name">
+            </div>
+
+            <div class="inputwrapper">
+              <label for="email" class="newline">Email</label>
+              <input type="email" name="email" id="email" placeholder="Example@email.com">
+            </div>
+
+            <div class="inputwrapper">
+              <textarea name="request" id="request" cols="100" rows="10" placeholder="Let us know what you think"></textarea>
+            </div>
+            
+            <div>
+              <input type="checkbox" name="email-sub"
+              id="email-sub" value="yes-sign-me-up" checked>
+              <label for="email-sub">Sign Up For Email Newsletter</label>
+            </div>
+
+            <div class="inputwrapper">
+              <p>How would you like to be contacted?</p>
+              <input type="radio" name="contact-pref" id="Phone" value="Phone">
+              <label for="Phone" class="margin-right-a">Phone</label>
+              <input type="radio" name="contact-pref" id="email-pref" value="Email">
+              <label for="email">Email</label>
+            </div>
+            
+            <div>
+              <select name="county" id="county" >
+
+                <option value="Not Chosen" class="grey">Choose Option</option>
+                <option value="Hennipen">Hennipen</option>
+                <option value="Cook">Cook</option>
+                <option value="Osseo">Osseo</option>
+                <option value="Other">Other</option>
+
+              </select>
+            </div>
+
+            <div class="inputwrapper">
+              <input type="submit" class="myButton" value="Fire Away">
+            </div>
+
+            
+
+          </form>
 
 
       </div>
