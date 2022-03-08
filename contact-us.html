@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- When duplicating page, change title and add description...steal from old site-->
+    <title>Roar Cycle = Contact Us Details Address Phone Number</title>
+    <!-- meta is the part that shows up below the page ...refer to lesson 71 for great business advice -->
+    <meta name="description" content="content details for repair shope, with specific phone number, emauls. ect">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f4574763a9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="headerbox1">
+            <a href="index.html">
+                <img class="logo" src="img/logo-roar-bikes.svg" alt="" />
+            </a>
+        </div>
+
+        <nav>
+          <div class="navbutton">
+            <a href="#">Book Online</a>
+            <div class="dropdown">
+              <div class="navbutton"><a href="#"></a>Delivery</div>
+              <div class="navbutton"><a href="#"></a>Callback</div>
+              <div class="navbutton"><a href="#"></a>Request Parts</div>
+            </div>
+          </div>
+
+          <div class="navbutton">
+            <a href="#">About</a>
+            
+          </div>
+
+          <div class="navbutton">
+            <a href="contact-us.html">Contact</a>
+            <div class="dropdown">
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="main2">
+          <h1>
+              Contact Us
+          </h1>
+          <p>
+              Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you in a matter of hours to help you.
+          </p>
+<!-- Can't test the PHP code rn, but we will do it later; -->
+          <form action="mail.php" method="post"> 
+
+            <div class="inputwrapper">
+              <label for="fname" class="newline">First Name</label>
+              <input type="text" name="fname" id="fname" placeholder="Enter Name">
+            </div>
+
+            <div class="inputwrapper">
+              <label for="lname" class="newline">Last Name</label>
+              <input type="text" name="lname" id="lname" placeholder="Enter Name">
+            </div>
+
+            <div class="inputwrapper">
+              <label for="email" class="newline">Email</label>
+              <input type="email" name="email" id="email" placeholder="Example@email.com">
+            </div>
+
+            <div class="inputwrapper">
+              <textarea name="request" id="request" cols="100" rows="10" placeholder="Let us know what you think"></textarea>
+            </div>
+            
+            <div>
+              <input type="checkbox" name="email-sub"
+              id="email-sub" value="yes-sign-me-up" checked>
+              <label for="email-sub">Sign Up For Email Newsletter</label>
+            </div>
+
+            <div class="inputwrapper">
+              <p>How would you like to be contacted?</p>
+              <input type="radio" name="contact-pref" id="Phone" value="Phone">
+              <label for="Phone" class="margin-right-a">Phone</label>
+              <input type="radio" name="contact-pref" id="email-pref" value="Email">
+              <label for="email">Email</label>
+            </div>
+            
+            <div>
+              <select name="county" id="county" >
+
+                <option value="Not Chosen" class="grey">Choose Option</option>
+                <option value="Hennipen">Hennipen</option>
+                <option value="Cook">Cook</option>
+                <option value="Osseo">Osseo</option>
+                <option value="Other">Other</option>
+
+              </select>
+            </div>
+
+            <div class="inputwrapper">
+              <input type="submit" class="myButton" value="Fire Away">
+            </div>
+
+            
+
+          </form>
+
+
+      </div>
+
+      <div class="cards">
+        <div class="card1">
+          <a href="#">
+            <i class="fas fa-thumbs-up fa-5x"></i>
+            <h2>Book Online</h2>
+            <p>Lorem ipsum dolor sit.</p>
+          </a>
+        </div>
+        <div class="card2">
+          <a href="#">
+            <i class="fas fa-wrench"></i>
+            <h2>Service Types</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </a>
+        </div>
+        <div class="card3">
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            <h2>Call for Advice</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="tBox">
+          <p>
+            "I love Mobile Bike Repair. The service was excellent. I love Mobile
+            Bike Repair."
+          </p>
+          <p>- Gladis Q.</p>
+        </div>
+        <div class="tBox">
+          <p>
+            "If you aren't sure, always go for Mobile Bike Repair. Needless to
+            say we are extremely satisfied with the results."
+          </p>
+          <p>- Francisco F.</p>
+        </div>
+        <div class="tBox">
+          <p>
+            "Dude, your stuff is the bomb! I am completely blown away. Mobile
+            Bike Repair has got everything I need."
+          </p>
+          <p>- Isadore E</p>
+        </div>
+        <div class="tBox">
+          <p>
+            "Thank you so much for your help. Mobile Bike Repair has completely
+            surpassed our expectations. No matter where you go, Mobile Bike
+            Repair is the coolest, most happening thing around! Keep up the
+            excellent work."
+          </p>
+          <p>- Sampson A.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
